@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    background-image: url("/img/9723-windows-xp.jpg");
+    overflow: overlay;
+    overflow-block: hidden;
+    background-size: cover;
+}
+body{
+    margin: 0;
+}
+h3{
+    font-family: "Roboto Light", "sans-serif";
+}
+p{
+    font-family: "Roboto Thin", "sans-serif";
+}
+h1{
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: rgb(17 117 162 / 53%);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+#kanban{
+    width: 100%;
+    display: block;
+}
+.column{
+    width: 18%;
+    float: left;
+    border-radius: 4%;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgba(206, 224, 236, 70%);
+}
+.card{
+    background: white;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 5%;
+    border: 1px;
+}
+.card:hover{
+    background-color: rgb(17 117 162 / 59%);
+    cursor: pointer;
+}
+.card:hover > .closeBtn{
+    background-color: black;
+}
+.tags *{
+    display: inline-block;
+    padding-top: 3px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+.tags > .front{
+    background-color: green;
+    color: white;
+}
+.tags > .back{
+    background-color: red;
+    color: white;
+}
+.tags > .device{
+    background-color: orange;
+    color: white;
+}
+.closeBtn{
+    float: right;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
